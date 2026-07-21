@@ -145,6 +145,24 @@
       .pc-row img { width: 100%; }
       .pc-strip { height: 160px; }
     }
+  
+    /* ===== MOBILE OVERFLOW FIX ===== */
+    body { overflow-x: hidden; }
+    @media (max-width: 768px) {
+      nav {
+        padding: 0 16px !important;
+        overflow: hidden;
+      }
+      .nav-logo, .nav-brand {
+        font-size: 0.95rem !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 55vw;
+      }
+      .nav-links { display: none !important; }
+    }
+
   </style>
 </head>
 <body>
